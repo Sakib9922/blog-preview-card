@@ -1,0 +1,127 @@
+/* custom font start */
+@font-face {
+    font-family: Figtree ;
+    src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Figtree_i ;
+    src: url(../fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Figtree_EB ;
+    src: url(../fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Figtree_SB ;
+    src: url(../fonts/static/Figtree-SemiBold.ttf);
+}
+/* custom font end */
+
+:root{
+    --text_color:rgb(0, 0, 0);
+    --trans_text_color:rgba(0, 0, 0, 0.8);
+    --BG_color:#f5d04e;
+    --card_BG_color:white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--BG_color);
+}
+.card_box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 325px;
+    padding: 25px;
+    background-color: var(--card_BG_color);
+    border-radius: 25px;
+    box-shadow: var(--text_color) 10px 10px 0;
+}
+
+/* card banner start */
+.card_image{
+    width: 100%;
+}
+.card_image img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* card banner end */
+
+/* card content start */
+.card_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+.status{
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: var(--BG_color);
+    width: fit-content;
+    border-radius: 4px;
+    font-family:Figtree_SB, sans-serif;
+    color: var(--text_color);
+}
+.pub_date{
+    margin-top: 15px;
+    font-size: 12px;
+    font-family:Figtree, sans-serif;
+    color: var( --trans_text_color);
+}
+.card_title{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Figtree_EB, sans-serif;
+    font-weight: bold;
+    color: var(--text_color);
+    transition: all 0.2s ease-in-out;
+}
+.card_title:hover{
+    color: var(--BG_color);
+    transition: all 0.2s ease-in-out;
+}
+.card_info{
+    font-size: 12px;
+    font-family:Figtree, sans-serif;
+    line-height: 1.8em;
+    color: var( --trans_text_color);
+}
+/* card content end */
+
+/* publisher info start */
+.Publisher{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Publisher_img{
+    width: 35px;
+    margin-right: 10px;
+}
+.Publisher_name{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: var(--text_color);
+}
+/* publisher info end */
