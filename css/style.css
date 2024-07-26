@@ -50,6 +50,7 @@ body{
     background-color: var(--card_BG_color);
     border-radius: 25px;
     box-shadow: var(--text_color) 10px 10px 0;
+    border: solid black 2px;
 }
 
 /* card banner start */
